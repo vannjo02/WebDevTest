@@ -1,0 +1,25 @@
+header {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+  text-align: center
+}
+
+ul li a:visited {
+  color: deeppink;
+}
+
+ul li a:hover {
+  font-weight: bold;
+}
+
+ul li a:active {
+  text-decoration: none;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+}
