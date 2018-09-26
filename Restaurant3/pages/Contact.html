@@ -140,13 +140,20 @@ form {
 </style>
 <script>
 function validateItems(name,email,info){
-  if (name==""){document.getElementById("name").className="form-control is-invalid"}
+  var err = false;
+  if (name==""){document.getElementById("name").className="form-control is-invalid"; err = true;}
   else {document.getElementById("name").className="form-control"}
-  if (email==""){document.getElementById("email").className="form-control is-invalid"}
+  if (email==""){document.getElementById("email").className="form-control is-invalid"; err = true;}
   else {document.getElementById("email").className="form-control"}
-  if (info==""){document.getElementById("info").className="form-control is-invalid"}
+  if (info==""){document.getElementById("info").className="form-control is-invalid"; err = true;}
   else {document.getElementById("info").className="form-control"}
-return false;
+  if (err == true){return false}
+  else {
+    //normally you would submit the form if there's no errors, however we're preventing submission regardless of errors
+    console.log("Form is ok")
+    return false;
+  }
+
 }
 </script>
 </html>

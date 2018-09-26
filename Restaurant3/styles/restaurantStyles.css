@@ -23,3 +23,7 @@ ul li a:active {
   margin: auto;
   width: 60%;
 }
+
+main {
+  margin-bottom: 100px;
+}
